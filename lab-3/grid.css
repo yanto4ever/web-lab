@@ -66,13 +66,13 @@ h1 {
 
 @media (min-width: 993px) {
     .row {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 33.33%);
     }
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
     .row {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 50%);
     }
     .item-3 {
         grid-column: 1 / -1;
@@ -81,6 +81,6 @@ h1 {
 
 @media (max-width: 768px) {
     .row {
-        grid-template-columns: 1fr;
+        grid-template-columns: 100%; 
     }
 }
