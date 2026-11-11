@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3 {
+    font-family: 'Rubik Distressed', serif;
+    text-align: center;
+}
+
+.block-content {
+    font-family: 'Caveat', serif;
+    font-size: 16px; 
+}
+
+.blocks-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.block {
+    position: relative; 
+    padding: 20px;
+    padding-bottom: 80px; 
+}
+
+.block-heading {
+    font-family: 'Tiny5 Duo', serif;
+    font-size: 20px; 
+    position: absolute;
+    bottom: 0; 
+    left: 0;   
+    width: 150px; 
+    padding: 10px;
+    text-align: center;
+}
+
+.block-1 { background-color: #334f6c; color: #ffffff; }
+.block-1 .block-heading { background-color: #f1c40f; color: #2c3e50; }
+
+.block-2 { background-color: #2ac269; color: #ffffff; }
+.block-2 .block-heading { background-color: #c0392b; color: #ffffff; }
+
+.block-3 { background-color: #7c3799; color: #ffffff; }
+.block-3 .block-heading { background-color: #f39c12; color: #ffffff; }
+
+.block-4 { background-color: #d35400; color: #ffffff; }
+.block-4 .block-heading { background-color: #2980b9; }
+
+.block-content table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.block-content table, 
+.block-content th, 
+.block-content td {
+    border: 1px solid currentColor;
+}
+
+@media (max-width: 768px) {
+    .block {
+        width: 100%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .block {
+        width: 50%;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    .block-1, .block-2, .block-3 {
+        width: 33.3333%;
+    }
+    .block-4 {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1201px) {
+    .block {
+        width: 25%;
+    }
+}
